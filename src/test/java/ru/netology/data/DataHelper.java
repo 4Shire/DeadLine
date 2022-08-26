@@ -7,18 +7,18 @@ public class DataHelper {
     }
 
     public static UserInfo generateUserInfo() {
-        String login = "ivan";
-        String password = "qwerty12345";
-        return new UserInfo("ivan", "qwerty12345");
+        String login = "vasya";
+        String password = "qwerty123";
+        return new UserInfo("vasya", "qwerty123");
     }
 
     public static UserInfo getInvalidLogin() {
         Faker faker = new Faker();
-        return new UserInfo(faker.name().firstName(), "qwerty12345");
+        return new UserInfo(faker.name().firstName(), "qwerty123");
     }
 
     public static UserInfo getInvalidPassword() {
         Faker faker = new Faker();
-        return new UserInfo("ivan", faker.internet().password());
+        return new UserInfo("vasya", faker.internet().password());
     }
 }
